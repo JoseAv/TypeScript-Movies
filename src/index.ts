@@ -1,11 +1,9 @@
-import express, { Response, Request } from 'express'
+import express, { json } from 'express'
+import { MoviesRouter } from './Routes/movies.routes'
 
 const app = express()
-
-app.get('/', (_req: Request, res: Response) => {
-  console.log('this is ping')
-  return res.send('some pong')
-})
+app.use(json())
+app.use('/movies', MoviesRouter)
 
 const PORT = 1234
 
