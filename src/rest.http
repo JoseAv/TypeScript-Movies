@@ -1,5 +1,28 @@
 ###
-GET http://localhost:1234
+GET http://localhost:1234/users
 
 ###
+GET http://localhost:1234/users/2
+
+###
+POST  http://localhost:1234/users
+content-type: application/json
+
+{
+    "name": "aveces hay",
+    "email": "aveces@gmail.com"
+}
+
+###
+DELETE   http://localhost:1234/users/7
+
+###
+PATCH    http://localhost:1234/users/1
+content-type: application/json
+
+{
+    "name": "josehay",
+    "email": "joseFDSA@gmail.com"
+}
+
 

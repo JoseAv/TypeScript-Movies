@@ -3,7 +3,7 @@ import { MoviesRouter } from './Routes/movies.routes'
 
 const app = express()
 app.use(json())
-app.use('/movies', MoviesRouter)
+app.use('/users', MoviesRouter)
 
 const PORT = 1234
 
